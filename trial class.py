@@ -30,7 +30,7 @@ while running:
             break
 
     # fill the screen window with a green color
-    screen.fill((0,125,0))
+    screen.fill((173,216,230))
     #Dude.update()
     all_sprites.draw(screen)
     # update the screen image
