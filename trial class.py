@@ -6,6 +6,7 @@
 import pygame
 from stuff.player import Player
 import Settings
+import random
 
 pygame.init()
 
@@ -16,6 +17,13 @@ pygame.display.set_caption("stuff")
 all_sprites = pygame.sprite.Group()
 Dude = Player()
 all_sprites.add(Dude)
+clouds = pygame.sprite.Group()
+cloudImage = pygame.image.load("C:/Users/Codewiz/Documents/Dan Sidi/stuff/Mario.png")
+for i in range(10):
+    x = random.randint(0, 800)
+    y = 600
+    # TODO attach coordinates and image in for loop
+    clouds.add(cloudImage)
 clock = pygame.time.Clock()
 
 running = True
